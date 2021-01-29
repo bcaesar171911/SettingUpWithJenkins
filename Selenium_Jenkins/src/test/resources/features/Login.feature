@@ -7,5 +7,5 @@ Scenario: Login to application
 		| Menu       |
 		| buy + sell |
 		| reviews    |
-#	And click on "Search Cars" link 
+	And click on "Search Cars" link 
    

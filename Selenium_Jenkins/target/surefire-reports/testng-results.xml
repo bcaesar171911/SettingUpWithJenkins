@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="84371" started-at="2021-01-29T06:26:17Z" finished-at="2021-01-29T06:27:41Z">
+  <suite name="Suite" duration-ms="127786" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:04:31Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="84371" started-at="2021-01-29T06:26:17Z" finished-at="2021-01-29T06:27:41Z">
+    <test name="Test" duration-ms="127786" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:04:31Z">
       <class name="runner.RunCuke">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setUpClass" is-config="true" duration-ms="3519" started-at="2021-01-29T06:26:17Z" finished-at="2021-01-29T06:26:20Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setUpClass" is-config="true" duration-ms="5357" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setup" is-config="true" duration-ms="1" started-at="2021-01-29T06:26:20Z" finished-at="2021-01-29T06:26:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setup" is-config="true" duration-ms="2" started-at="2021-01-29T17:02:28Z" finished-at="2021-01-29T17:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" duration-ms="74335" started-at="2021-01-29T06:26:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-29T06:27:35Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" duration-ms="108774" started-at="2021-01-29T17:02:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-29T17:04:18Z">
           <params>
             <param index="0">
               <value>
@@ -31,14 +31,59 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Search Car"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+*** Element info: {Using=link text, value=Search Car}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Search Car"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+*** Element info: {Using=link text, value=Search Car}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)
+at steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)
+at ✽.click on "Search Cars" link(file:src/test/resources/features/Login.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.RunCuke@19b4d0f]" name="teardown" is-config="true" duration-ms="1" started-at="2021-01-29T06:27:35Z" finished-at="2021-01-29T06:27:35Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.RunCuke@19b4d0f]" name="teardown" is-config="true" duration-ms="1" started-at="2021-01-29T17:04:18Z" finished-at="2021-01-29T17:04:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="tearDownClass" is-config="true" duration-ms="6036" started-at="2021-01-29T06:27:35Z" finished-at="2021-01-29T06:27:41Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="tearDownClass" is-config="true" duration-ms="12837" started-at="2021-01-29T17:04:18Z" finished-at="2021-01-29T17:04:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
