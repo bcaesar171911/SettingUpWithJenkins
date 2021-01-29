@@ -4,6 +4,7 @@
   <artifactId>Selenium_Jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 <properties>
+
 		<selenium-java.version>3.141.59</selenium-java.version>
 		<selenium-server.version>3.141.59</selenium-server.version>
 		<cucumber-testng.version>4.8.0</cucumber-testng.version>
