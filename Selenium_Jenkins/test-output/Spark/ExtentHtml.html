@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jan 29, 2021 12:02:25 PM</span>
+                    <span class="badge badge-primary">Jan 29, 2021 03:54:21 PM</span>
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@
 						
 						
 						
-						
+						<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
 						<div class="dropdown-divider"></div>
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
@@ -131,7 +131,8 @@
 					<i class="fa fa-tag"></i>
 					</a>
 					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a class="dropdown-item" href="#">@Login</a>
+						<a class="dropdown-item" href="#">@Search-Cars</a>
+						<a class="dropdown-item" href="#">@Search-Cars-Positive</a>
 					</ul>
 				</li>
 			</ul>
@@ -140,32 +141,34 @@
 			<ul class="test-list-item">
 				<li class="test-item"  status="fail" test-id="1"
 					author=""
-					tag="@Login"
+					tag="@Search-Cars"
 					device="">
 					<div class="status-avatar fail-bg">
 						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">Successfully login</p>
-							<p class="duration text-sm">0h 0m 50s+220ms</p>
-							<span class="datetime">12:03:23 PM</span>
+							<p class="name">Acceptance testing to validate search cars page is working fine.</p>
+							<p class="duration text-sm">0h 0m 43s+479ms</p>
+							<span class="datetime">15:54:57 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">Successfully login</h5>
-									<span class='badge badge-success'>01.29.2021 12:03:23</span>
-									<span class='badge badge-danger'>01.29.2021 12:04:13</span>
-									<span class='badge badge-default'>0h 0m 50s+220ms</span>
+									<h5 class="test-status text-fail">Acceptance testing to validate search cars page is working fine.</h5>
+									<span class='badge badge-success'>01.29.2021 15:54:57</span>
+									<span class='badge badge-danger'>01.29.2021 15:55:40</span>
+									<span class='badge badge-default'>0h 0m 43s+479ms</span>
 								</div>
 								<div class="m-t-15">
-			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Login</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Search-Cars</span>
 								</div>
 								<div class="m-t-10 m-l-5">
-									
+									In order to validate that
+  the search cars page is working fine
+  we will do the acceptance testing
 								</div>
 							</div>
 						</div>
@@ -174,7 +177,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">Login to application</div>
+				<div class="node">Validate search cars page</div>
 				<div class="status-avatar float-left fail-bg">
 					<i class="fa fa-times text-white"></i>
 				</div>
@@ -211,8 +214,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f689771747efa2614862e855519505a9
 *** Element info: {Using=link text, value=Search Car}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -233,8 +236,57 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
 	at pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)
 	at steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)
-	at ?.click on "Search Cars" link(file:src/test/resources/features/Login.feature:10)
+	at ?.click on "Search Cars" link(file:src/test/resources/features/SearchCars.feature:14)
 </textarea>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.select_carbrand_as_from_AnyMake_dropdown(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And select carbrand as "BMW" from AnyMake dropdown</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.select_carmodel_as_from_SelectModel_dropdown(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And select carmodel as "1 SERIES" from SelectModel dropdown</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.select_location_as_from_SelectLocation_dropdown(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And select location as "Australia" from SelectLocation dropdown</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.select_price_as_from_price_dropdown(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And select price as "$1,000" from price dropdown</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.click_on_Find_My_Next_Car_button()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And click on Find_My_Next_Car button</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="SearchCarsSteps.i_should_see_list_of_searched_cars()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then I should see list of searched cars</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="SearchCarsSteps.the_page_title_should_be(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And the page title should be "Bmw 1 Series Under 1000 for Sale | carsguide"</span>
+							</div>
+				<div class="details">Step skipped</div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -279,7 +331,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">1</span>
+					<span class="badge badge-primary">2</span>
 					</a>
 				</li>
 			</ul>
@@ -289,7 +341,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">@Login</p>
+							<p class="name">@Search-Cars</p>
 							<p class="duration text-sm">2 tests</p>
 							<span class="datetime">
 							
@@ -301,7 +353,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>@Login</h4>
+							<h4>@Search-Cars</h4>
 							
 							<span status="fail" class='badge badge-danger'>1 failed</span>
 							
@@ -322,9 +374,9 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>12:03:23 PM</td>
+									<td>15:54:57 PM</td>
 									<td class='linked' test-id='1'>
-										Successfully login
+										Acceptance testing to validate search cars page is working fine.
 									</td>
 								</tr>
 								<tr class="tag-test-status" status="fail">
@@ -333,11 +385,59 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>12:03:23 PM</td>
+									<td>15:54:57 PM</td>
 									<td class='linked' test-id='2'>
-										Login to application
+										Validate search cars page
 										<div class="">
-											<span class="badge badge-default">Successfully login.Login to application</span>
+											<span class="badge badge-default">Acceptance testing to validate search cars page is working fine..Validate search cars page</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">@Search-Cars-Positive</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							
+							<span class='badge badge-danger'>1</span>
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>@Search-Cars-Positive</h4>
+							
+							<span status="fail" class='badge badge-danger'>1 failed</span>
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>15:54:57 PM</td>
+									<td class='linked' test-id='2'>
+										Validate search cars page
+										<div class="">
+											<span class="badge badge-default">Acceptance testing to validate search cars page is working fine..Validate search cars page</span>
 										</div>
 									</td>
 								</tr>
@@ -408,11 +508,11 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>12:03:51 PM</td>
+									<td>15:55:20 PM</td>
 									<td class='linked' test-id='6'>
 										And click on "Search Cars" link
 										<div class="">
-											<span class="badge badge-default">Login to application</span>
+											<span class="badge badge-default">Validate search cars page</span>
 										</div>
 									</td>
 								</tr>
@@ -494,10 +594,10 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='75%'><b>3</b> steps passed</small></div>
+					<div><small data-tooltip='27.273%'><b>3</b> steps passed</small></div>
 					<div>
-						<small data-tooltip='25%'><b>1</b> steps failed, 
-						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						<small data-tooltip='9.091%'><b>1</b> steps failed, 
+						<b>7</b> skipped, <b data-tooltip='63.636%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -549,7 +649,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jan 29, 2021 12:02:25 PM</h4>
+							<h4 class="font-weight-light mt-4">Jan 29, 2021 03:54:21 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -565,7 +665,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 58s+135ms</h4>
+							<h4 class="font-weight-light mt-4">0h 1m 29s+142ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -609,7 +709,16 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 						</thead>
 						<tbody>
 							<tr>
-								<td>@Login</td>
+								<td>@Search-Cars</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+								<td>
+									0%
+								</td>
+							</tr>
+							<tr>
+								<td>@Search-Cars-Positive</td>
 								<td>0</td>
 								<td>1</td>
 								<td>0</td>
@@ -644,23 +753,23 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 1,
-		grandChildCount: 4,
+		grandChildCount: 11,
 		passGrandChild: 3,
 		failGrandChild: 1,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
-		skipGrandChild: 0,
+		skipGrandChild: 7,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 1,
-		eventsCount: 4,
+		exceptionsGrandChild: 8,
+		eventsCount: 11,
 		passEvents: 2,
 		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 0,
+		skipEvents: 7,
 		infoEvents: 1,
 		debugEvents: 0,
 		exceptionsEvents: 0
@@ -668,7 +777,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 </script>
 <script>
 	var timeline = {
-	        "Successfully login":50.22
+	        "Acceptance testing to validate search cars page is working fine.":43.479
 	};
 </script>
                 </div>

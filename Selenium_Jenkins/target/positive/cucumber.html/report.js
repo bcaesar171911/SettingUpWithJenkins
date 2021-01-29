@@ -1,21 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/SearchCars.feature");
 formatter.feature({
-  "name": "Successfully login",
-  "description": "",
+  "name": "Acceptance testing to validate search cars page is working fine.",
+  "description": "  In order to validate that\n  the search cars page is working fine\n  we will do the acceptance testing",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Login"
+      "name": "@Search-Cars"
     }
   ]
 });
 formatter.scenario({
-  "name": "Login to application",
+  "name": "Validate search cars page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Login"
+      "name": "@Search-Cars"
+    },
+    {
+      "name": "@Search-Cars-Positive"
     }
   ]
 });
@@ -67,8 +70,78 @@ formatter.match({
   "location": "SearchCarsSteps.click_on_link(String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Search Car\"}\n  (Session info: chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OWNER-VAIO\u0027, ip: \u0027192.168.1.151\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_101\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fa79d2f92dd8b17d18d8ecb18c566037\n*** Element info: {Using\u003dlink text, value\u003dSearch Car}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)\r\n\tat steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)\r\n\tat ✽.click on \"Search Cars\" link(file:src/test/resources/features/Login.feature:10)\r\n",
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Search Car\"}\n  (Session info: chrome\u003d88.0.4324.104)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OWNER-VAIO\u0027, ip: \u0027192.168.1.151\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_101\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f689771747efa2614862e855519505a9\n*** Element info: {Using\u003dlink text, value\u003dSearch Car}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)\r\n\tat steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)\r\n\tat ✽.click on \"Search Cars\" link(file:src/test/resources/features/SearchCars.feature:14)\r\n",
   "status": "failed"
+});
+formatter.step({
+  "name": "select carbrand as \"BMW\" from AnyMake dropdown",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.select_carbrand_as_from_AnyMake_dropdown(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "select carmodel as \"1 SERIES\" from SelectModel dropdown",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.select_carmodel_as_from_SelectModel_dropdown(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "select location as \"Australia\" from SelectLocation dropdown",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.select_location_as_from_SelectLocation_dropdown(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "select price as \"$1,000\" from price dropdown",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.select_price_as_from_price_dropdown(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "click on Find_My_Next_Car button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.click_on_Find_My_Next_Car_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "I should see list of searched cars",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SearchCarsSteps.i_should_see_list_of_searched_cars()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the page title should be \"Bmw 1 Series Under 1000 for Sale | carsguide\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchCarsSteps.the_page_title_should_be(String)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({

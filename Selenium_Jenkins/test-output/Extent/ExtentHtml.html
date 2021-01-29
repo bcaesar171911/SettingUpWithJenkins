@@ -54,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 29, 2021 12:02:25 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 29, 2021 03:54:21 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -71,6 +71,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -82,7 +83,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Login</a></li>
+					<li><a href='#'>@Search-Cars</a></li>
+					<li><a href='#'>@Search-Cars-Positive</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -153,12 +155,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='27.273%'><span class='strong'>3</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='63.636%'>7</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='63.636%'>0</span> others
                 </div>
             </div>
         </div>
@@ -178,8 +180,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Successfully login</span>
-						<span class='test-time'>Jan 29, 2021 12:03:23 PM</span>
+						<span class='test-name'>Acceptance testing to validate search cars page is working fine.</span>
+						<span class='test-time'>Jan 29, 2021 03:54:57 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -189,13 +191,17 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
+<div class='test-desc'>In order to validate that
+  the search cars page is working fine
+  we will do the acceptance testing</div>
 <div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
-		<span class='category label'>@Login</span>
+		<span class='category label'>@Search-Cars</span>
+		<span class='category label'>@Search-Cars-Positive</span>
 	</div>
-	<span class='duration right label'>0h 0m 50s+220ms</span>
+	<span class='duration right label'>0h 0m 43s+479ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Login to application</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Validate search cars page</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
@@ -214,8 +220,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f689771747efa2614862e855519505a9
 *** Element info: {Using=link text, value=Search Car}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -236,10 +242,38 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
 	at pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)
 	at steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)
-	at ?.click on "Search Cars" link(file:src/test/resources/features/Login.feature:10)
+	at ?.click on "Search Cars" link(file:src/test/resources/features/SearchCars.feature:14)
 </textarea>
 		</li>
-		<li test-id='7' class='node * pass' status='pass'>
+		<li test-id='7' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.select_carbrand_as_from_AnyMake_dropdown(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select carbrand as "BMW" from AnyMake dropdown</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='8' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.select_carmodel_as_from_SelectModel_dropdown(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select carmodel as "1 SERIES" from SelectModel dropdown</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='9' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.select_location_as_from_SelectLocation_dropdown(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select location as "Australia" from SelectLocation dropdown</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='10' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.select_price_as_from_price_dropdown(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select price as "$1,000" from price dropdown</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='11' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.click_on_Find_My_Next_Car_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And click on Find_My_Next_Car button</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='12' class='node then skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.i_should_see_list_of_searched_cars()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then I should see list of searched cars</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='13' class='node and skip' status='skip'>
+			<div class="step-name" title="SearchCarsSteps.the_page_title_should_be(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And the page title should be "Bmw 1 Series Under 1000 for Sale | carsguide"</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='14' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>AfterActions.tearDown(Scenario)</div>
 			<div class="node-step"></div>
 		</li>
@@ -287,7 +321,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Login</span>
+						<span class='category-name'>@Search-Cars</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -309,13 +343,46 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 29, 2021 12:03:23 PM</td>
-										<td class='linked' test-id='1'>Successfully login</td>
+										<td>Jan 29, 2021 03:54:57 PM</td>
+										<td class='linked' test-id='1'>Acceptance testing to validate search cars page is working fine.</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 29, 2021 12:03:23 PM</td>
-										<td class='linked' test-id='2'>Login to application</td>
+										<td>Jan 29, 2021 03:54:57 PM</td>
+										<td class='linked' test-id='2'>Validate search cars page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Search-Cars-Positive</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 29, 2021 03:54:57 PM</td>
+										<td class='linked' test-id='2'>Validate search cars page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -367,7 +434,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 29, 2021 12:03:51 PM</td>
+										<td>Jan 29, 2021 03:55:20 PM</td>
 										<td class='linked' test-id='6'>And click on "Search Cars" link</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Search Car"}
@@ -376,8 +443,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f689771747efa2614862e855519505a9
 *** Element info: {Using=link text, value=Search Car}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -398,7 +465,7 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
 	at pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)
 	at steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)
-	at ?.click on "Search Cars" link(file:src/test/resources/features/Login.feature:10)
+	at ?.click on "Search Cars" link(file:src/test/resources/features/SearchCars.feature:14)
 </textarea>
 										</td>
 									</tr>
@@ -436,25 +503,25 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 29, 2021 12:02:25 PM</div>
+					<div class='panel-lead'>Jan 29, 2021 03:54:21 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 29, 2021 12:04:23 PM</div>
+			 		<div class='panel-lead'>Jan 29, 2021 03:55:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 58s+135ms</div>
+					<div class='panel-lead'>0h 1m 29s+142ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -470,7 +537,16 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Login</td>
+							<td>@Search-Cars</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@Search-Cars-Positive</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -507,21 +583,21 @@ Session ID: fa79d2f92dd8b17d18d8ecb18c566037
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 1,
-				grandChildCount: 4,
+				grandChildCount: 11,
 				passGrandChild: 3,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 7,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 8,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Successfully login":50.22
+			        "Acceptance testing to validate search cars page is working fine.":43.479
 			};
 		</script>
 	

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="127786" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:04:31Z">
+  <suite name="Suite" duration-ms="94021" started-at="2021-01-29T20:54:18Z" finished-at="2021-01-29T20:55:53Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="127786" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:04:31Z">
+    <test name="Test" duration-ms="94021" started-at="2021-01-29T20:54:18Z" finished-at="2021-01-29T20:55:53Z">
       <class name="runner.RunCuke">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setUpClass" is-config="true" duration-ms="5357" started-at="2021-01-29T17:02:23Z" finished-at="2021-01-29T17:02:28Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setUpClass" is-config="true" duration-ms="4540" started-at="2021-01-29T20:54:19Z" finished-at="2021-01-29T20:54:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setup" is-config="true" duration-ms="2" started-at="2021-01-29T17:02:28Z" finished-at="2021-01-29T17:02:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@19b4d0f]" name="setup" is-config="true" duration-ms="1" started-at="2021-01-29T20:54:23Z" finished-at="2021-01-29T20:54:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" duration-ms="108774" started-at="2021-01-29T17:02:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-29T17:04:18Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@19b4d0f]" name="runScenario" duration-ms="85144" started-at="2021-01-29T20:54:23Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-29T20:55:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to application"]]>
+                <![CDATA["Validate search cars page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Successfully login"]]>
+                <![CDATA["Acceptance testing to validate search cars page is working fine."]]>
               </value>
             </param>
           </params>
@@ -39,8 +39,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f689771747efa2614862e855519505a9
 *** Element info: {Using=link text, value=Search Car}]]>
             </message>
             <full-stacktrace>
@@ -50,8 +50,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'OWNER-VAIO', ip: '192.168.1.151', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa79d2f92dd8b17d18d8ecb18c566037
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f689771747efa2614862e855519505a9
 *** Element info: {Using=link text, value=Search Car}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -72,18 +72,18 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at com.sun.proxy.$Proxy18.click(Unknown Source)
 at pages.actions.CarsGuideHomePageActions.clickOnSearchCarsMenu(CarsGuideHomePageActions.java:28)
 at steps.SearchCarsSteps.click_on_link(SearchCarsSteps.java:37)
-at ✽.click on "Search Cars" link(file:src/test/resources/features/Login.feature:10)
+at ✽.click on "Search Cars" link(file:src/test/resources/features/SearchCars.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.RunCuke@19b4d0f]" name="teardown" is-config="true" duration-ms="1" started-at="2021-01-29T17:04:18Z" finished-at="2021-01-29T17:04:18Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.RunCuke@19b4d0f]" name="teardown" is-config="true" duration-ms="1" started-at="2021-01-29T20:55:49Z" finished-at="2021-01-29T20:55:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="tearDownClass" is-config="true" duration-ms="12837" started-at="2021-01-29T17:04:18Z" finished-at="2021-01-29T17:04:31Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@19b4d0f]" name="tearDownClass" is-config="true" duration-ms="3814" started-at="2021-01-29T20:55:49Z" finished-at="2021-01-29T20:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
