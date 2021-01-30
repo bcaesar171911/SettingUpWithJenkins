@@ -97,7 +97,7 @@
 						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-						<appURL>https://www.nike.com/</appURL>
+						<appURL>${urlToBeTested}</appURL>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

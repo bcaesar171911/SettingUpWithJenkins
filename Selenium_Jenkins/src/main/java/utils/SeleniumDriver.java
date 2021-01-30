@@ -46,8 +46,9 @@ public class SeleniumDriver {
 	}
 
 	public static void openPage() {
-
-		driver.get(System.getProperty("appURL"));
+		String url = System.getProperty("appURL");
+		System.out.println("URL is " + url);
+		driver.get(url);
 	}
 
 	public static WebDriver getDriver() {
