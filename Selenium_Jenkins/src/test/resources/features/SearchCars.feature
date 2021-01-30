@@ -6,7 +6,7 @@ Feature: Acceptance testing to validate search cars page is working fine.
 
   @Search-Cars-Positive
   Scenario: Validate search cars page
-    Given I am on the home page of "https://www.carsguide.com.au/" of Cars guide site
+    Given I am on the home page of Cars guide site
     When I move to the menu
       | Menu       |
       | buy + sell |

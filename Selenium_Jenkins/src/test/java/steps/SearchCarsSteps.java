@@ -3,6 +3,7 @@ package steps;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -17,10 +18,11 @@ public class SearchCarsSteps {
 	CarsGuideHomePageActions carsGuideHomePageActions = new CarsGuideHomePageActions();
 	CarsSearchPageActions carsSearchPageActions =  new CarsSearchPageActions();
 
-	@Given("^I am on the home page of \"([^\"]*)\" of Cars guide site$")
-	public void i_am_on_the_home_page_of_of_Cars_guide_site(String websiteURL) throws Throwable {
+	@Parameters("urlToBeTested")
+	@Given("^I am on the home page of Cars guide site$")
+	public void i_am_on_the_home_page_of_of_Cars_guide_site() throws Throwable {
 	    
-		SeleniumDriver.openPage(websiteURL);
+		SeleniumDriver.openPage();
 	}
 
 	@When("^I move to the menu$")

@@ -2,7 +2,7 @@
 Feature: Successfully login 
 
 Scenario: Login to application 
-	Given I am on the home page of "https://www.carsguide.com.au/" of Cars guide site 
+	Given I am on the home page of Cars guide site 
 	When I move to the menu 
 		| Menu       |
 		| buy + sell |

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Parameters;
 
 public class SeleniumDriver {
 
@@ -44,9 +45,10 @@ public class SeleniumDriver {
 
 	}
 
-	public static void openPage(String url) {
+//	@Parameters("urlToBeTested")
+	public static void openPage() {
 
-		driver.get(url);
+		driver.get(System.getProperty("urlToBeTested"));
 	}
 
 	public static WebDriver getDriver() {

@@ -96,9 +96,9 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
 					<systemPropertyVariables>
 						<appURL>${urlToBeTested}</appURL>
-						<tag>${testToRun}</tag>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
