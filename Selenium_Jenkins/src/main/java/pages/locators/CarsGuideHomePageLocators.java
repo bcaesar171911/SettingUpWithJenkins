@@ -16,7 +16,7 @@ public class CarsGuideHomePageLocators {
 	@FindBy(how = How.LINK_TEXT, using = "news")
 	public WebElement nwsLink;
 	
-	@FindBy(how = How.LINK_TEXT, using = "Search Car")
+	@FindBy(how = How.LINK_TEXT, using = "Search Cars")
 	public WebElement searchCarsLink;
 	
 	@FindBy(how = How.LINK_TEXT, using = "Used")

@@ -15,7 +15,7 @@ public class CarsSearchPageLocators {
 	@FindBy(how = How.XPATH, using = "//*[@id='locations']")
 	public WebElement locationsDropdown;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id='price-max']")
+	@FindBy(how = How.XPATH, using = "//*[@id='priceTo']")
 	public WebElement carPriceDropdown;
 	
 	@FindBy(how = How.XPATH, using = "//*[@id='search-submit']")
