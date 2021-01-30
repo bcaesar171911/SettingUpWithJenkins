@@ -18,10 +18,10 @@ public class SearchCarsSteps {
 	CarsGuideHomePageActions carsGuideHomePageActions = new CarsGuideHomePageActions();
 	CarsSearchPageActions carsSearchPageActions =  new CarsSearchPageActions();
 
-	@Parameters("urlToBeTested")
 	@Given("^I am on the home page of Cars guide site$")
 	public void i_am_on_the_home_page_of_of_Cars_guide_site() throws Throwable {
 	    
+		
 		SeleniumDriver.openPage();
 	}
 

@@ -45,7 +45,6 @@ public class SeleniumDriver {
 
 	}
 
-//	@Parameters("urlToBeTested")
 	public static void openPage() {
 
 		driver.get(System.getProperty("urlToBeTested"));
