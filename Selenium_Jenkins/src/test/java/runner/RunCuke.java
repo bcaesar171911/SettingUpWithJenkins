@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
         		  "pretty", "html:target/positive/cucumber.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         features = "src/test/resources/features",
         glue = {"steps"}
-        ,tags = {"@Search-Cars"}       
+//        ,tags = {"@Search-Cars"}       
         )
 public class RunCuke extends AbstractTestNGCucumberTests {
 	
